@@ -6,6 +6,8 @@ using Projects.Models;
 using Projects;
 using MySQLApp;
 
+// In this controller, the functions are implemented similar to those of the project controller.
+// That's why I think there is no need to describe them
 
 namespace Projects.Controllers
 {
@@ -65,6 +67,10 @@ namespace Projects.Controllers
             if (storedTask == null) return NotFound();
             storedTask.Name = Task.Name;
             storedTask.Status = Task.Status;
+            if (storedTask.Status < 1 || storedTask.Status > 2)
+            {
+                return BadRequest($"Status can only be 1,2,3");
+            }
             storedTask.description = Task.description;
             storedTask.Priority = Task.Priority;
             storedTask.Priority = Task.Project_ID;
@@ -73,7 +79,7 @@ namespace Projects.Controllers
         }
         private int GetNextTaskId => db.tasks.Count() == 0 ? 1 : db.tasks.Max(x => x.Id) + 1;
 
-        [HttpGet("GetNexttaskId")]    //  проверка: /api/GetGetNextTaskId/
+        
         public int GetGetNextTaskId()
         {
             return GetNextTaskId;
@@ -87,6 +93,11 @@ namespace Projects.Controllers
                 return BadRequest(ModelState);
             }
             task.Id = GetNextTaskId;
+            if (task.Status < 1 || task.Status > 2)
+            {
+                return BadRequest($"Status can only be 1,2,3")ж
+                // Status can only be 1,2,3 (ToDo / InProgress / Done)
+            }
             try
             {
                 db.tasks.Add(task);

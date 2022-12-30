@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
+// Project Class
+
 namespace Projects.Models
 {
     public class Tasks
