@@ -3,10 +3,10 @@ Test task for a candidate on .Net intern position
 
 ### Built Wit:
 
-Microsoft.Data.SqlClient
-Microsoft.EntityFrameworkCore.SqlServer
-Pomelo.EntityFrameworkCore.MySql
-Swashbuckle.AspNetCore
+* Microsoft.Data.SqlClient
+* Microsoft.EntityFrameworkCore.SqlServer
+* Pomelo.EntityFrameworkCore.MySql
+* Swashbuckle.AspNetCore
 
 ## Contact
 
