@@ -10,5 +10,5 @@ Test task for a candidate on .Net intern position
 
 ## Contact
 
-b.i.sergeevi4@mail.ru
-https://github.com/nejiklol
+* b.i.sergeevi4@mail.ru
+* https://github.com/nejiklol
