@@ -8,6 +8,12 @@ Test task for a candidate on .Net intern position
 * Pomelo.EntityFrameworkCore.MySql
 * Swashbuckle.AspNetCore
 
+### Built on:
+
+* Visual Studio 2019
+* MariaDB
+* localhost
+
 ## Contact
 
 * b.i.sergeevi4@mail.ru
